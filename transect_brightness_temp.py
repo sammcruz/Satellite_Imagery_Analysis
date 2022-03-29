@@ -45,7 +45,7 @@ tb = ds.tbb.values
 np.diff(longitude).mean()
 np.diff(latitude).mean()
 
-# foud out that the resolution is 0.2, so creating a array with the same spacing
+# found out that the resolution is 0.02, so creating a array with the same spacing
 trans_long = np.arange(x_values[0], x_values[1], 0.02)
 trans_lat = np.arange(y_values[0], y_values[1], 0.02)
 
@@ -64,5 +64,8 @@ plt.title("Brightness Temperature along the transect")
 ax.grid(True, alpha=0.5)
 ax.set_ylabel('Brightness Temperature (K)')
 ax.set_xlabel('Longitude')
+
+plt.savefig('bt_along_transect.png')
+
 
 
