@@ -29,7 +29,7 @@ ds.tbb.isel().plot(x="longitude")
 plt.plot(x_values, y_values, linewidth = 1, linestyle = "--", color = "black")
 
 # Saving image
-plt.savefig('transect.png')
+plt.savefig('transect.png', dpi=320)
 
 ''' INTERPOLATING THE 2D BRIGHTNESS TEMP TO 1D TRANSECT '''
 
@@ -65,7 +65,7 @@ ax.grid(True, alpha=0.5)
 ax.set_ylabel('Brightness Temperature (K)')
 ax.set_xlabel('Longitude')
 
-plt.savefig('bt_along_transect.png')
+plt.savefig('bt_along_transect.png', dpi=320)
 
 
 
