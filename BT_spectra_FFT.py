@@ -119,9 +119,9 @@ plt.show()
 f, Pxx_den = signal.welch(trans_tb, 0.02)
 Pxx_den[0] = Pxx_den[1]
 plt.loglog(f, Pxx_den,'-k')
- # not sure this label is the right information in the axis
+# not sure this label is the right information in the axis
 plt.xlabel('Wavenumber [m ⁻¹]')
 plt.ylabel('PSD [K² m]')
 plt.grid(alpha = 0.5, ls=':', which='both')
+plt.savefig('figs/PSD_logscale.png', dpi=320)
 plt.show()
-plt.savefig('PSD_logscale.png', dpi=320)
